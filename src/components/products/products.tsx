@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const Products = () => (
   <section className="content">
     <h2 className="subtitle">Products Index Page</h2>
@@ -6,10 +7,18 @@ const Products = () => (
       first few:
     </p>
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        <NavLink to="/products/1">1</NavLink>
+      </li>
+      <li>
+        <NavLink to="/products/2">2</NavLink>
+      </li>
+      <li>
+        <NavLink to="/products/3">3</NavLink>
+      </li>
+      <li>
+        <NavLink to="/products/4">4</NavLink>
+      </li>
     </ul>
   </section>
 );
